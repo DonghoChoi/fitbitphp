@@ -401,7 +401,7 @@ class FitBitPHP
                                 null, OAUTH_HTTP_METHOD_GET, $headers);
         } catch (Exception $E) {
         }
-
+        
         $response = $this->oauth->getLastResponse();
         $responseInfo = $this->oauth->getLastResponseInfo();
         if (!strcmp($responseInfo['http_code'], '200')) {
