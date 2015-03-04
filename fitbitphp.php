@@ -1474,6 +1474,8 @@ class FitBitPHP
      * @param  DateTime $date
      * @param  String $dateStr
      * @return mixed SimpleXMLElement or the value encoded in json as an object
+     * 
+     * DEPRECATED as of 03/04/15: refer https://wiki.fitbit.com/display/API/Fitbit+Resource+Access+API
      */
     public function getBloodPressure($date, $dateStr)
     {
@@ -1509,6 +1511,8 @@ class FitBitPHP
      * @param string $diastolic Diastolic measurement
      * @param DateTime $time Time of the measurement (set proper timezone, which could be fetched via getProfile)
      * @return mixed SimpleXMLElement or the value encoded in json as an object
+     * 
+     * DEPRECATED as of 03/04/15: refer https://wiki.fitbit.com/display/API/Fitbit+Resource+Access+API
      */
     public function logBloodPressure($date, $systolic, $diastolic, $time = null)
     {
@@ -1551,6 +1555,8 @@ class FitBitPHP
      * @throws FitBitException
      * @param string $id Blood pressure log id
      * @return bool
+    * 
+     * DEPRECATED as of 03/04/15: refer https://wiki.fitbit.com/display/API/Fitbit+Resource+Access+API
      */
     public function deleteBloodPressure($id)
     {
@@ -1576,6 +1582,8 @@ class FitBitPHP
      * @param  DateTime $date
      * @param  String $dateStr
      * @return mixed SimpleXMLElement or the value encoded in json as an object
+     * 
+     * DEPRECATED as of 03/04/15: refer https://wiki.fitbit.com/display/API/Fitbit+Resource+Access+API
      */
     public function getGlucose($date, $dateStr)
     {
@@ -1611,6 +1619,8 @@ class FitBitPHP
      * @param string $hba1c Glucose measurement
      * @param DateTime $time Time of the measurement (set proper timezone, which could be fetched via getProfile)
      * @return mixed SimpleXMLElement or the value encoded in json as an object
+     * 
+     * DEPRECATED as of 03/04/15: refer https://wiki.fitbit.com/display/API/Fitbit+Resource+Access+API
      */
     public function logGlucose($date, $tracker, $glucose, $hba1c = null, $time = null)
     {
@@ -1656,6 +1666,8 @@ class FitBitPHP
      * @param  DateTime $date
      * @param  String $dateStr
      * @return mixed SimpleXMLElement or the value encoded in json as an object
+     * 
+     * DEPRECATED as of 03/04/15: refer https://wiki.fitbit.com/display/API/Fitbit+Resource+Access+API
      */
     public function getHeartRate($date, $dateStr = null)
     {
@@ -1691,6 +1703,8 @@ class FitBitPHP
      * @param string $heartRate Heart rate measurement
      * @param DateTime $time Time of the measurement (set proper timezone, which could be fetched via getProfile)
      * @return mixed SimpleXMLElement or the value encoded in json as an object
+     * 
+     * DEPRECATED as of 03/04/15: refer https://wiki.fitbit.com/display/API/Fitbit+Resource+Access+API
      */
     public function logHeartRate($date, $tracker, $heartRate, $time = null)
     {
@@ -1733,6 +1747,8 @@ class FitBitPHP
      * @throws FitBitException
      * @param string $id Heart rate log id
      * @return bool
+     * 
+     * DEPRECATED as of 03/04/15: refer https://wiki.fitbit.com/display/API/Fitbit+Resource+Access+API
      */
     public function deleteHeartRate($id)
     {
